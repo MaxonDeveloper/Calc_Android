@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGrey"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:text=""
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:hint="@string/result"
+                android:text=""
+                android:textSize="50sp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/luna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_button_white"
+                    android:padding="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/luna"
+                    android:onClick="clickButtonCalc"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonPi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_grey"
+                    android:padding="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/pi"
+                    android:onClick="clickButtonCalc"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonDivision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_grey"
+                    android:padding="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/division"
+                    android:onClick="clickButtonCalc"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonMultiplications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_grey"
+                    android:padding="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/multiplications"
+                    android:onClick="clickButtonCalc"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButtonSeven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_white"
+                    android:src="@drawable/_7"
+                    android:onClick="clickButtonCalc"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonEight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_white"
+                    android:onClick="clickButtonCalc"
+                    android:src="@drawable/_8" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonNine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_white"
+                    android:src="@drawable/_9"
+                    android:onClick="clickButtonCalc"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_grey"
+                    android:src="@drawable/minus"
+                    android:onClick="clickButtonCalc"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButtonFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_white"
+                    android:src="@drawable/_4"
+                    android:onClick="clickButtonCalc"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_white"
+                    android:src="@drawable/_5"
+                    android:onClick="clickButtonCalc"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_white"
+                    android:src="@drawable/_6"
+                    android:onClick="clickButtonCalc"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_grey"
+                    android:src="@drawable/plus"
+                    android:onClick="clickButtonCalc"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButtonOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_white"
+                    android:src="@drawable/_1"
+                    android:onClick="clickButtonCalc"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_white"
+                    android:src="@drawable/_2"
+                    android:onClick="clickButtonCalc"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonTree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_white"
+                    android:src="@drawable/_3"
+                    android:onClick="clickButtonCalc"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonAC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_button_white"
+                    android:src="@drawable/ac"
+                    android:onClick="clickButtonCalc" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButtonZero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_white"
+                    android:src="@drawable/_0"
+                    android:onClick="clickButtonCalc"/>
+
+
+
+                <ImageButton
+                    android:id="@+id/imageButtonComma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_white"
+                    android:src="@drawable/comma"
+                    android:onClick="clickButtonCalc"/>
+                <ImageButton
+                    android:id="@+id/imageButtonStir"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_white"
+                    android:onClick="clickButtonCalc"
+                    android:src="@drawable/stir"
+                    android:scaleType="centerInside"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonEqually"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_grad"
+                    android:src="@drawable/equally"
+                    android:onClick="clickButtonCalc"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
